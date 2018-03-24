@@ -67,6 +67,7 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
+        // Authorise Update product with API Authentication (passport)
         $this->ProductUserCheck($product);
         $request['detail'] = $request->description;
         unset($request['description']);
@@ -84,6 +85,7 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
+        // Authorise Delete product with API Authentication (passport)
         $this->ProductUserCheck($product);
         $product->delete();
         return response(null,Response::HTTP_NO_CONTENT);
