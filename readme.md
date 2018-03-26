@@ -33,7 +33,7 @@ Features:
 
 Step 1: Download and add the folder inside ‘C:\xampp\htdocs’
 
-Step 2: Open phpmyadmin http://localhost/phpmyadmin/index.php , create database ‘ecomm’ and import database dump file ‘ecomm.sql’ into it.
+Step 2: Open phpmyadmin http://localhost/phpmyadmin/index.php , create database ‘ecommapi’ and import database dump file ‘ecommapi.sql’ into it.
 
 Step 3: Go to command prompt
 
