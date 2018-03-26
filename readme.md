@@ -42,4 +42,6 @@ c:\xampp\htdocs\ecommapi>php artisan serve
 Use Postman tool for performing integration testing with your API.
 
 
+Postman Output for entire Project E-Commerce API
+![ecommapi](https://user-images.githubusercontent.com/14937374/37905555-88b6e1ba-30ff-11e8-9493-e1b70ffe2c9e.png)
 
