@@ -23,17 +23,6 @@ class ReviewController extends Controller
         //return $product->reviews;
         return ReviewResource::collection($product->reviews);
     }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -48,29 +37,6 @@ class ReviewController extends Controller
             'data' => new ReviewResource($review)
         ],Response::HTTP_CREATED);
     }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Model\Review  $review
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Review $review)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Model\Review  $review
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Review $review)
-    {
-        //
-    }
-
     /**
      * Update the specified resource in storage.
      *
@@ -94,8 +60,11 @@ class ReviewController extends Controller
      * @param  \App\Model\Review  $review
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Review $review)
+    public function destroy(Product $product, Review $review)
     {
-        //
+        //return $product;
+        //return $review;
+        $review->delete();
+        return response(null,Response::HTTP_NO_CONTENT);
     }
 }
