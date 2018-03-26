@@ -14,8 +14,8 @@ Features:
 9.  Setup environment in Postman.
 10. Implement meta links in API.
 11.  Configure API Authentication - Passport package to provide authentication
-    - Authenticated users can store/update/delete Products
-	  - Normal users can List/Show Products and List,Show,Store,Update,Delete Reviews
+	- Authenticated users can store/update/delete Products
+	- Normal users can List/Show Products and List,Show,Store,Update,Delete Reviews
 12.	Pagination feature is available on Products list.   
 13.	MYSQL dump of the database named ecommapi.sql’ is provided.
     
